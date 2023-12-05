@@ -10,8 +10,6 @@ Our company has decided to create a new movie studio, we are tasked with providi
 
 ## Data Prep
 
-## Statistical Testing + Hypothesis
-
 ## Analyses + Results/Recommendations 
 
 ## Conclusions and Next Steps
