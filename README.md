@@ -40,7 +40,7 @@ These datasets are then combined into a single DataFrame (a tabular data structu
 
 ### Cleaned Data
 
-The cleaned and processed data is saved as CSV files for easy access and use in future analyses. You can access the cleaned `.csv` file here [Clean Data](https://github.com/pyamin1878/Movie-Project/blob/main/Data/movie_clean_v2.csv).
+The cleaned and processed data is saved as CSV files for easy access and use in future analyses. You can access the cleaned `.csv` file here [Clean Data](https://github.com/pyamin1878/Movie-Project/blob/patrick/Data/movie_clean.csv).
 
 ## Analyses + Results/Recommendations 
 
@@ -69,6 +69,21 @@ Adopt a low-budget strategy, focusing on movies that require minimal investment 
 ![Alt text](Images/budget_new.png)
 
 ## Conclusions and Next Steps
+
+### Conclusion
+> Based on the provided recommendations, the studio should prioritize producing a horror-mystery-thriller movie with a runtime under 2 hours and a low budget. This combination presents a profitable and safe bet for the studio's initial projects, maximizing the return on investment while satisfying stakeholders' expectations. The shorter runtime aligns with audience preferences, ensuring broader appeal and impact, while the low budget minimizes financial risk and maximizes ROI. This approach balances commercial success with artistic expression, leading to a high-impact film that resonates with audiences.
+
+### Next Steps
+
+- Conduct Market research to identify specific trend in the recommended genres.
+
+- Perform test screening and gather audience feedback in term of preferences.
+
+- Build a creative team, ensuring a comprehensive approach to storytelling that captivates audiences.
+
+- Develop a project with details of needed ressources and budget. Implementing strict policies regarding ressources management.
+
+- Regularly monitoring and evaluate the budget progress through the production phase.
 
 ## Repo Structure 
 ```
