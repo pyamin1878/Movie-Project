@@ -1,24 +1,24 @@
-# Movie-Project
+# **No Business Like Show Business** - *Film Strategy for Box Office Success*
 ## Business Understanding
-Our company has decided to create a new movie studio, we are tasked with providing actionable insights into what types of films have done historically well at the box office as well as deciding what films to create.
 
-> What defines success for a film?
-- Box office Revenue
-- ROI (Return on Investement)
-- Positive Reviews
-- Social and Cultural Impact
-> Questions to be addressed in our analysis 
+Our company has decided to create a new movie studio, and we have been tasked with analyzing historical box office success and providing actionable insights to guide content production. Our film strategy recommendations focus on key stakeholder questions such as:
 
 - What defines success for a film- does popularity equate to profitability?
 - What type of films have historically seen the greatest ROI?
 - Do higher production budgets lead to higher revenues?
 
 ## Data Understanding
-We were given 5 raw datasets from [IMDb](https://www.imdb.com/), [Box Office Mojo](https://www.boxofficemojo.com/), [The numbers](https://www.the-numbers.com/), [TMDB](https://www.themoviedb.org/), and [Rotten Tomatoes](https://www.rottentomatoes.com/) located in the [Data](https://github.com/pyamin1878/Movie-Project/tree/main/Data) directory. 
+We were provided raw datasets from various sources, which are described in [Final.ipynb](https://github.com/pyamin1878/Movie-Project/blob/main/Final.ipynb) and can be explored further in the [Data](https://github.com/pyamin1878/Movie-Project/tree/main/Data) directory. 
 
-From these datasets the ones that proved most insightful for our analysis were from IMDb and The Numbers. IMDb contained a [SQL](https://docs.python.org/3/library/sqlite3.html) database with plenty of data points on movies and ratings. The Numbers on the otherhand displayed financials such as worldwide gross, budget, and other financial metrics. 
+Of these datasets, [IMDb](https://www.imdb.com/) and [The Numbers](https://www.the-numbers.com/) provided the most insight for our analysis. 
 
-In our combined dataset we ended up analyzing 1490 movies
+IMDb contained a [SQL](https://docs.python.org/3/library/sqlite3.html) database from which we created a dataframe of movie genres, runtimes, release years, and audience ratings.
+
+The Numbers dataset contained movie production budgets and worldwide gross revenues from which we calculated return on investment (ROI) rates to then merge with the IMDb data.
+
+After combining the datasets, our final analysis was limited to 1490 movies spanning 2010-2019.
+
+
 ## Data Prep & Cleaning
 ![Alt text](Images/IMDB_ERD.jpeg)
 
