@@ -1,4 +1,4 @@
-# # **No Business Like Show Business** - *Film Strategy for Box Office Success*
+# **No Business Like Show Business** - *Film Strategy for Box Office Success*
 ## Business Understanding
 
 Our company has decided to create a new movie studio, and we have been tasked with analyzing historical box office success and providing actionable insights to guide content production. Our film strategy recommendations focus on key stakeholder questions such as:
@@ -8,15 +8,15 @@ Our company has decided to create a new movie studio, and we have been tasked wi
 - Do higher production budgets lead to higher revenues?
 
 ## Data Understanding
-We were provided raw datasets from [IMDb](https://www.imdb.com/), [Box Office Mojo](https://www.boxofficemojo.com/), [The Numbers](https://www.the-numbers.com/), [TMDB](https://www.themoviedb.org/), and [Rotten Tomatoes](https://www.rottentomatoes.com/), which can be explored further in the [Data](https://github.com/pyamin1878/Movie-Project/tree/main/Data) directory. 
+We were provided raw datasets from various sources, which are described in [Final.ipynb](https://github.com/pyamin1878/Movie-Project/blob/main/Final.ipynb) and can be explored further in the [Data](https://github.com/pyamin1878/Movie-Project/tree/main/Data) directory. 
 
-Of these datasets, IMDb and The Numbers provided the most insight for our analysis. 
+Of these datasets, [IMDb](https://www.imdb.com/) and [The Numbers](https://www.the-numbers.com/) provided the most insight for our analysis. 
 
 IMDb contained a [SQL](https://docs.python.org/3/library/sqlite3.html) database from which we created a dataframe of movie genres, runtimes, release years, and audience ratings.
 
 The Numbers dataset contained movie production budgets and worldwide gross revenues from which we calculated return on investment (ROI) rates to then merge with the IMDb data.
 
-Our analysis was limited to 1490 movies spanning 2010-2019.
+After combining the datasets, our final analysis was limited to 1490 movies spanning 2010-2019.
 
 
 ## Data Prep & Cleaning
