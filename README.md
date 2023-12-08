@@ -22,6 +22,7 @@ In our combined dataset we ended up analyzing 1490 movies
 ## Data Prep & Cleaning
 ![Alt text](Images/IMDB_ERD.jpeg)
 
+### Data Cleaning
 - Two sets of data are extracted from IMDb: `movie_basics` (basic movie information) and `movie_ratings` (ratings and votes).
 These datasets are then combined into a single DataFrame (a tabular data structure), focusing on titles, runtime, genres, ratings, and votes.
 
@@ -38,6 +39,8 @@ These datasets are then combined into a single DataFrame (a tabular data structu
 - The data is sorted based on ROI in descending order.
 
 ### Cleaned Data
+
+The cleaned and processed data is saved as CSV files for easy access and use in future analyses. You can access the cleaned `.csv` file here [Clean Data](https://github.com/pyamin1878/Movie-Project/blob/main/Data/movie_clean_v2.csv).
 
 ## Analyses + Results/Recommendations 
 
