@@ -19,12 +19,11 @@ The Numbers dataset contained movie production budgets and worldwide gross reven
 After combining the datasets, our final analysis was limited to 1490 movies spanning 2010-2019.
 
 
-## Data Prep & Cleaning
+## Data Preparation
 ![Alt text](Images/IMDB_ERD.jpeg)
 
-### Data Cleaning
-- Two sets of data are extracted from IMDb: `movie_basics` (basic movie information) and `movie_ratings` (ratings and votes).
-These datasets are then combined into a single DataFrame (a tabular data structure), focusing on titles, runtime, genres, ratings, and votes.
+### Cleaning
+- Two sets of data are extracted from IMDb: `movie_basics` (basic movie information) and `movie_ratings` (ratings and votes). These datasets are then combined into a single DataFrame (a tabular data structure), focusing on titles, runtime, genres, ratings, and votes.
 
 - This dataset is read and processed to extract budget, gross revenue, and release dates.
 
@@ -33,56 +32,46 @@ These datasets are then combined into a single DataFrame (a tabular data structu
 - Monetary values (like budget and revenue) are converted from text to numeric values for analysis.
 
 - A new column for 'Return on Investment' (ROI) is created to evaluate the financial performance of the movies.
-### Merging the Data
+### Merging
 - The cleaned IMDb and The Numbers data are merged based on movie titles and release years to create a comprehensive dataset.
 - Unnecessary columns are dropped, and the data is cleared of any missing values.
 - The data is sorted based on ROI in descending order.
 
-### Cleaned Data
+### Exporting
 
-The cleaned and processed data is saved as CSV files for easy access and use in future analyses. You can access the cleaned `.csv` file here [Clean Data](https://github.com/pyamin1878/Movie-Project/blob/patrick/Data/movie_clean.csv).
+The cleaned and processed data is saved as CSV files for easy access and use in future analyses. You can access the cleaned `.csv` file [here](https://github.com/pyamin1878/Movie-Project/blob/patrick/Data/movie_clean.csv).
 
-## Analyses + Results/Recommendations 
+## Analysis & Recommendations 
 
 ### Recommendation 1
 
-**Genre**: 
+**Genre**: Focus on producing a movie that blends horror, mystery, and thriller genres. This combination has been identified as having the highest Return on Investment, making it a safe bet for the studio's initial projects and satisfying stakeholders.
 
-Focus on producing a movie that blends horror, mystery, and thriller genres. This combination has been identified as having the highest Return on Investment, making it a safe bet for the studio's initial projects and satisfying stakeholders.
-
-![Alt text](Images/genres.png)
+![Alt text](Images/roi_per_genre.png)
 
 ### Recommendation 2
 
-**Runtime**: 
+**Runtime**: Aim for a movie runtime of under 2 hours. This length aligns with audience preferences, ensuring broader appeal and impact.
 
-Runtime recommendation: Aim for a movie runtime of under 2 hours. This length aligns with audience preferences, ensuring broader appeal and impact.
-
-![Alt text](Images/runtime_new.png)
+![Alt text](Images/runtime_dist.png)
 
 ### Recommendation 3
 
-**Budget**: 
+**Budget**: Adopt a low-budget strategy, focusing on movies that require minimal investment but yield high ROI. This approach reduces financial risk and fosters creativity in storytelling.
 
-Adopt a low-budget strategy, focusing on movies that require minimal investment but yield high ROI. This approach reduces financial risk and fosters creativity in storytelling.
+![Alt text](Images/budget_vs_revenue.png)
 
-![Alt text](Images/budget_new.png)
-
-## Conclusions and Next Steps
+## Conclusions & Next Steps
 
 ### Conclusion
-> Based on the provided recommendations, the studio should prioritize producing a horror-mystery-thriller movie with a runtime under 2 hours and a low budget. This combination presents a profitable and safe bet for the studio's initial projects, maximizing the return on investment while satisfying stakeholders' expectations. The shorter runtime aligns with audience preferences, ensuring broader appeal and impact, while the low budget minimizes financial risk and maximizes ROI. This approach balances commercial success with artistic expression, leading to a high-impact film that resonates with audiences.
+Based on the provided recommendations, the studio should prioritize producing a horror-mystery-thriller movie with a runtime under 2 hours and a low budget. This combination presents a profitable and safe bet for the studio's initial projects, maximizing the return on investment while satisfying stakeholders' expectations. The shorter runtime aligns with audience preferences, ensuring broader appeal and impact, while the low budget minimizes financial risk and maximizes ROI. This approach balances commercial success with artistic expression, leading to a high-impact film that resonates with audiences.
 
 ### Next Steps
 
-- Conduct Market research to identify specific trend in the recommended genres.
-
+- Conduct market research to identify specific trend in the recommended genres.
 - Perform test screening and gather audience feedback in term of preferences.
-
 - Build a creative team, ensuring a comprehensive approach to storytelling that captivates audiences.
-
 - Develop a project with details of needed ressources and budget. Implementing strict policies regarding ressources management.
-
 - Regularly monitoring and evaluate the budget progress through the production phase.
 
 ## Repo Structure 
